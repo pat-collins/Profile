@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/8acfdb93a2.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="CSS/style2.css">-->
+</head>
+<body>
+    <header>
+        <!-- HEADER-->
+        <h2 id="page-header">
+            <img src="Image\Profile.jpg" alt="Profile pic">
+            Pat Collins 
+        </h2>
+        <!-- NAVIGATION-->
+        <nav id="main-navigation">
+            <ul>
+                <!-- <li><a href="#services">Ambitions</a></li> -->
+                <li><a href="#about">About Me</a></li>
+                <!-- <li><a href="#scada">Automation</a></li>
+                <li><a href="#testimonies">Testimonies</a></li> -->
+                <!-- <li><a href="./memory.html">Memory Game</a></li> -->
+                
+            </ul>
+        </nav>
+    
+    </header>
+
+    <!--MAIN-->
+    <div id="page-main">
+        <!--HERO-->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    aspiringDeveloper()
+                </h1>
+                <!-- <p>Pat Collins</p> -->
+            </div>
+
+        </div>
+        <!--SERVICES-->
+        <div id="services" class="section-header services">
+            <div id="services inside" class="services-section">
+                <div class="services-section-inside">
+                <div class="section-header">
+                    <!-- <h2>My Coding Examples</h2> -->
+                </div>
+                    <div class="service-box">
+                        <img src="image/Code.png">
+                        <h4>What I Want To Do</h4>
+                        <p>I am learning the skills to become a Front End Developer. Firstly, focusing on Javascript, HTML and CSS </p>
+                    </div>
+                    <div class="service-box">
+                        <img src="Image/Industrial.png">
+                        <h4>What I Currently Do</h4>
+                        <p>I have years of expierence in Industial Automation, fault finding, programming SCADA systems and PLC's</p>
+                    </div>
+                    <!-- <div class="coding-box">
+                        <img src="">
+                        <h4>Yet to decide</h4>
+                        <p>Insert other "yet to decide information"</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT-->
+        <div id="about" class="section-header about" onclick="toggleAbout()">
+        <!-- <input type="button" value="About Me" onclick="toggle()"/> -->
+            <h2>About Me</h2>
+        </div>
+        <div id ="about-content" class="hide">
+            <p>
+                I am originaly from New Zealand and have spent most of my working career in Autralia. I am an Industrial Automation Technician who is looking for a new challenge. I have over ten years of experience based in engineering and technicial services.
+                I possesses a strong ability to quickly comprehend new or existing systems and solve problems. My abilities stem from understanding and programming industrial automation and control systems.
+                Prior to an industrial career, I spent two years in the Royal New Zealand Army.
+            </p>
+        </div>
+        <!--Industrial Automation-->
+        <div id="scada" class="section-header scada" onclick="toggleScada()">
+            <h2>What is Industrial Automation and SCADA?</h2>
+        </div>
+        <div id="scada-content" class="hide">
+            <p>
+                Industrial automation is the control of machinery and processes by autonomous control systems and software. PLC's (Programmable Logic Controllers) could be considered the brain of an automation system. A PLC scans feedback from the field and sends output signals according to the logic or program.
+                An HMI (human machine interface) is the graphic display used by the operator to control and monitor the machinery. 
+            </p>
+            <div>
+                <!-- <img src="Image/Automation-eng.jpg" alt="automation image one"> -->
+                <!-- <img src="Image/JA9P7OK - Copy.jpg" alt="automation image two"> -->
+            </div>
+            <p>
+                Supervisory control and data acquisition or SCADA is a control system architecture comprising computers, networked data communications and graphical user interfaces for high-level supervision of machines and processes.
+            </p>
+        </div>
+        <div id="code" class="section-header code" onclick="toggleCode()">
+            <h2>My Coding Examples</h2>
+        </div>
+            <div id="code-content" class="hide">
+                <!-- <div id="code" class="code-section-inside">
+                    <div class="section-header code">
+                        <h2>My Coding Examples</h2>
+                    </div> -->
+                        <!-- Images used to open the lightbox -->
+                        <div class="row">
+                            <div class="column">
+                                <h2>PLC Code Example</h2>
+                                <img src="Image/PLC code.jpg" onclick="openLightbox();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <h2>Human Interface Code Example</h2>
+                                <img src="Image/Rottnest LIT0001_L1.PNG" onclick="openLightbox();currentSlide(2)" class="hover-shadow" >
+                            </div>
+                        </div>
+                        <!-- Lightbox -->
+                        <div id="myLightbox" class="lightbox">
+                            <span class="close curser" onclick="closeLightbox()">&times;</span>
+                            <div class="lightbox-content">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 2</div>
+                                    <img src="Image/PLC code.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 2</div>
+                                    <img src="Image/Rottnest LIT0001_L1.PNG" style="width:100%">
+                                </div>
+                                <!-- Next/previous controls -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <!-- Caption text -->
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+                            </div>
+                        </div>
+                <!-- </div> -->
+            </div>
+        <!-- </div> -->
+        <!--TESTIMONIALS-->
+        <div id="testimonies" class="section-header testimonies" onclick="toggleTestimonies()">
+           
+            <h2>A Testimonial From Donald Trump</h2>
+        </div>
+        <div id ="testimonies-content" class="hide">
+                <a class="testimonial-box" href="./memory.html">
+                    <div class="testimonial-button">
+                        <div class="testimonial-autor">
+                            <img src="image/TrumpAvatar.png" alt="Pat Collins">
+                            <h3>Donald Trump</h3>
+                            <!-- <span>The Don</span> -->
+                        </div>
+                        <div class="testimonial-content">
+                            "Click here to play Pat's 'Trump Memory Game'. I've heard it's good... so good. It's very very good"
+                        </div>
+                    </div>
+                </a>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <img src="Image/Profile.jpg" alt="my avatar">
+        <span><br  />&copy; 2022</span>
+
+
+    </footer>
+    
+</body>
+</html> 
