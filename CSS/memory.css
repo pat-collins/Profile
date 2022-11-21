@@ -1,0 +1,300 @@
+/* default styling given to the whole body of visible content */
+body {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* main styles */
+
+/* HEADER STYLES */
+
+header {
+    /* background color */
+    height: 150px;
+    /* text color */
+    /* color: #080808; */
+    /*padding top and bottom of 20px - padding left and right of 30px*/
+    padding: 20px 30px;
+}
+
+/* logo nest inside header */
+
+header #page-header {
+    color: #222;
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    width: 49%; 
+    display: inline-block;
+    
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+/* MAIN NAVIGATION */
+
+header #main-navigation {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+    /* width: 1800px;
+    height: 10px;
+     */
+}
+
+header #main-navigation ul {
+    /* The list-style CSS property is a shorthand for setting the individual values that define how a list is displayed: list-style-type, list-style-image, and list-style-position. */
+        /* none - No list style is used. */
+    list-style: none;
+    padding: 0;
+    /* display: inline-block;
+    text-align: right; */
+
+    
+    
+}
+
+header #main-navigation ul li {
+    /* The display CSS property defines the display type of an element */
+    display: inline-block; 
+    
+}
+
+header #main-navigation ul li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    padding: 10px 15px;
+    
+}
+
+header #main-navigation ul li a:hover {
+    background: rgb(161, 161, 161);
+    border-radius: 3px;
+    /* The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+    transition: 0.3s ease all;
+} 
+
+/* footer*/
+
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* Memory game */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+}
+
+.game-content {
+    background-color: #222;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: #FAB942 url('../img/question.gif') no-repeat center center / contain;
+}
+
+.front:hover {
+  background-color: #e2a024;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #ecece9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background:#222 !important;
+}
+
+#main-title {
+  text-align: center;
+}
+
+#quote-title {
+  height: 40px;
+  text-align: center;
+  border-left: 0.25em solid rgb(199, 192, 206);
+  font-style: italic;
+  margin: 0 0 1.5625em;
+  padding-left: 1em;
+  padding-right: 1em;
+  quotes: none;
+  padding-top: 2%;
+}
+
+blockquote {
+  height: 200px;
+  text-align: center;
+  border-left: 0.25em solid rgb(199, 192, 206);
+  font-style: italic;
+  margin: 0 0 1.5625em;
+  padding-left: 1em;
+  padding-right: 1em;
+  quotes: none;
+  margin-top: 5%;
+}
+blockquote:before,
+blockquote:after {
+  content:'';
+}
+
+/*mobile responsive*/
+@media screen and (max-width: 768px) {
+
+  /* HEADER   */
+ 
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  header {
+      /* background color */
+      height: 150px;
+      padding: 10px 10px;
+  }
+  
+  /* logo nest inside header */
+  
+  header {
+      color: #222;
+      text-decoration: none; 
+      width: 100%; 
+      display: inline-block;
+      height: 80px;
+  
+  }
+
+  #page-header {
+    
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  header img {
+     
+       width: 50px;
+       height: auto;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+      
+  }
+  
+  header h2 {
+      font-size: 18px;
+  }
+  
+  /* MAIN NAVIGATION */
+  
+  header #main-navigation {
+      
+      display:none;
+      text-align: right;
+  }
+
+  .card,
+  .back,
+  .front {
+    height: 80px;
+    width: 80px;
+  }
+
+  .quote-text {
+    padding-top: 50px;
+    margin-top: 60px ;
+    font-size: 13px;
+  }
+
+  footer   {
+    
+    background: #222;
+    color: #777;
+    padding: 40px;
+    text-align: center;
+  }
+  footer img   {
+    display: block;
+    border-radius: 5px;
+    width: 40px;
+    height: auto;
+    margin: 0 auto 10px;
+  }
+  
+
+  body {
+    margin-top: 0%;
+  }
+
+  #game-board {
+    width: 100%;
+    height: auto;
+  }
+
+}

@@ -1,0 +1,846 @@
+/* css reset stuff */
+
+/* default styling given to the whole body of visible content */
+body {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* main styles */
+
+
+/* HEADER STYLES */
+
+header {
+    /* background color */
+    height: 150px;
+    padding: 10px 10px;
+}
+
+/* logo nest inside header */
+
+header #page-header {
+    color: #222;
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    width: 49%; 
+    display: inline-block
+
+}
+
+header img {
+   
+     width: 100px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+/* MAIN NAVIGATION */
+
+header #main-navigation {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+header #main-navigation ul {
+    
+    list-style: none;
+    padding: 0;
+
+}
+
+header #main-navigation ul li {
+    /* The display CSS property defines the display type of an element */
+    display: inline-block; 
+    
+}
+
+header #main-navigation ul li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+header #main-navigation ul li a:hover {
+    background: rgb(161, 161, 161);
+    border-radius: 3px;
+    transition: 0.3s ease all;
+} 
+
+/* footer*/
+
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* MAIN CONTENT */
+
+/* HERO SECTION */
+
+.hero {
+    height: 400px;
+    text-align: center;
+    background-color: #222;
+    background-size: 100%; 
+}
+
+.hero-content {
+    padding-top: 130px;
+    line-height: 1;
+}
+
+.hero-title {
+    color: rgb(209, 193, 46);
+    margin: 0;
+    font-size: 100px;
+}
+
+.hero-content p {
+    font-size: 90px; 
+    margin-bottom: 60px;
+    margin-top: 90px;
+}
+
+.hero-content a {
+    color: white;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 15px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 28px;
+    
+}
+
+/* SITE SECTION STYLINGS */
+
+.site-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.section-header h2 {
+    
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #222;
+}
+
+.button-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #c7caca;
+    padding: 40px;
+}
+
+
+.button-header h2 {
+    
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #222;
+}
+
+.button-header p {
+    width: 400px;
+    padding: 30px 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button-header:hover{
+    cursor: pointer;
+    background-color: grey
+}
+
+
+.site-section-secondary {
+    background: #EFEFEF;
+}
+
+
+
+/* FEATURE BOXES */
+
+
+.services-section-inside {
+   
+    width: 100%;
+    max-width: 1000x;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.service-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;
+    padding: 20px 30px;
+    line-height: 1;
+}
+
+.service-box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-box h4 { /*.service-box h5*/
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #222;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    
+}
+
+.service-box p {
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: inline-block;
+    line-height: 1.5;
+}
+/*About*/
+
+.about {
+    background: #c7caca;
+    padding: 30px 250px;
+
+}
+
+.about:hover {
+    background-color: grey ;
+    cursor: pointer;
+
+}
+
+/* Button */
+
+
+#about-content {
+   
+    width: 80%;
+    max-width: 1000x;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#about-content.hide {
+   
+    height: 0;
+    opacity: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.resume {
+    background: #c7caca;
+    text-align: center;
+    padding: 30px 250px;
+    
+}
+
+.resume:hover {
+    background-color: grey ;
+    cursor: pointer;
+
+}
+
+/* Button */
+
+
+#resume-content {
+   
+    width: 80%;
+    max-width: 1000x;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#resume-content.hide {
+   
+    height: 0;
+    opacity: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.code {
+    background: #c7caca;
+    padding: 30px 250px;
+}
+
+
+
+.code:hover {
+    background-color: grey ;
+    cursor: pointer;
+
+}
+
+/* Button */
+
+
+#code-content {
+   
+    width: 80%;
+    max-width: 1000x;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#code-content.hide {
+   
+    height: 0;
+    opacity: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+/* Coding information */
+.coding-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;
+    padding: 20px 30px;
+    line-height: 1;
+}
+
+.coding-box img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    
+}
+
+.coding-box p {
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.coding-box h4 { /*.service-box h5*/
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    
+}
+
+/* Lightbox */
+
+.row > .column {
+    padding: 0 8px;
+  }
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
+  .column img {
+    width: 500px;
+    height: auto;
+  }
+
+.lightbox {
+    display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  }
+   
+/* Lightbox Content */
+
+  
+.lightbox-content img {
+    max-width: 90%;
+  margin-top: 2%;
+  overflow-y:scroll;
+  height:100%;
+  /* padding-top: 200px; */
+  padding-bottom: 400px;
+
+}
+
+  /* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+img.demo {
+    opacity: 0.6;
+  }
+  
+.active,
+.demo:hover {
+    opacity: 1;
+  }
+  
+img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* TESTIMONIALS */
+
+
+.testimonial-box {
+    vertical-align: top;
+    display: inline-block;
+    width: 22%; /*27*/
+    color:#222; 
+    text-decoration: none;
+    /* padding: 40px 70px;  */
+}
+
+
+.testimonial-box img {
+    width: 80%;
+    float: center; 
+    /*width: 10px; /*40*/
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-author h5 {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+/* .testimonial-author span {
+    color: #999;
+    font-size:14px;
+} */
+
+/* New testimonies css start */
+.testimonies {
+    background: #c7caca;
+    /* text-align: center; */
+    padding: 30px 250px;
+
+}
+
+.testimonies:hover {
+    background-color: grey ;
+    /* text-align: center; */
+    cursor: pointer;
+
+}
+
+/* Button */
+
+
+#testimonies-content {
+   
+    width: 90%;
+    max-width: 1000x;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#testimonies-content.hide {
+   
+    height: 0;
+    opacity: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+/* New testimonies css finish */
+
+.testimonial-button{
+    padding: 50px 50px;
+}
+
+.testimonial-button:hover {
+    background: rgb(214, 214, 214);
+    border-radius: 10px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+
+/*mobile responsive*/
+@media screen and (max-width: 768px) {
+
+    /* HEADER   */
+
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        width: 400px;
+    }
+
+    body h2{
+        font-size: 12px;
+    }
+
+    body p {
+        font-size: 10px;
+    }
+
+
+    header {
+        /* background color */
+        height: 150px;
+        padding: 10px 10px;
+    }
+    
+    /* logo nest inside header */
+    
+    header {
+        color: #222;
+        text-decoration: none; 
+        width: 380px; 
+        display: inline-block;
+        height: 80px;
+    
+    }
+    
+    header img {
+       
+         width: 50px;
+         height: auto;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: middle;
+        
+    }
+    
+    header h2 {
+        font-size: 18px;
+    }
+    
+
+
+    /* MAIN NAVIGATION */
+    
+    header #main-navigation {
+        
+        display:none;
+        text-align: right;
+    }
+
+    #footer {
+        height: 40px;
+        width: 320px;
+    }
+
+    #footer img{
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    /*  HERO  */
+    .hero {
+        height: 150px;
+        width:400px;
+        
+    }
+    .hero-content {
+        padding-top: 60px;
+        
+    }
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-content a {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-width: 1px;
+        background: #FFF;
+        color: #333;
+        
+    }
+    
+    FEATURE BOXES  
+    
+
+    /* .section-header services {
+        width: 400px;
+    } */
+    .services-section-inside {
+    
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: auto;
+        margin-top: 10px;
+
+    }
+
+    .service-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 35%;
+        padding: 20px 20px;
+        line-height: 1;
+    }
+
+    .service-box img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 40px;
+        margin-bottom: 15px;
+    }
+
+    .service-box h4 { 
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: #222;
+        font-weight: 300px;
+        letter-spacing: 1px;
+        
+    }
+
+    .service-box p {
+        border-radius: 4px;
+        margin-bottom: 15px;
+        display: inline-block;
+        line-height: 1.5;
+        font-size: 10px;
+    }
+
+    .button-header {
+        background: #c7caca;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 8%;
+        text-align: center;
+        margin-bottom: 15px;
+        width: 320px;
+        overflow: hidden;
+        margin-left: 0%;
+        margin-right: 0%;
+    } 
+    
+    .button-header:hover{
+        cursor: pointer;
+        background-color: grey;
+    }
+
+    .button-header h2 {
+        
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #222;
+    }
+
+    .column {
+        width:20%;
+        height: auto;
+    }
+
+    .column img {
+        width:80%;
+        height: auto;
+    }
+
+    .testimonial-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        
+        line-height: 1;
+    }
+
+    .testimonial-box img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 100px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-box h4 { 
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: #222;
+        font-weight: 300px;
+        letter-spacing: 1px;
+        
+    }
+
+    .testimonial-box p {
+        border-radius: 4px;
+        margin-bottom: 15px;
+        display: inline-block;
+        line-height: 1.5;
+        font-size: 10px;
+    }
+
+    #testimonies-content {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    #myLightboxResume {
+        padding-top: 50px;
+    }
+}
